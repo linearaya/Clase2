@@ -1,0 +1,40 @@
+body{
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 400;
+    background-color:#e2f1f8;
+    color: #00363a;
+}
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #006064;
+}
+h2,h3{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: #006064;
+}
+h4,h5{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #006064;
+}
+h6{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #006064;
+}
+a{
+    color: #4fb3bf;
+}
+span{
+    font-weight: 600;
+}
+div#mapid{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px
+    
+}
