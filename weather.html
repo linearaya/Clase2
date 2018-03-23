@@ -17,7 +17,7 @@
 <body>
 <div class="container">
 	<div class="row">
-		<!--<div class="col-sm-12 py-5">
+		<!--<div class="col-sm-12 py-5"><!-- significa agarra 12 columnas a lo ancho -->
         <div class="col-sm-6 py-5">
 			<h1>Está raro el clima</h1>
 			<h2>En todo el mundo</h2>
@@ -27,7 +27,7 @@
         </div>  
 		<!--<div class="col-sm-6 py-5">
 			<p>Para hacer una consulta específica corresponde ir a buscar un recursos particular, que se estructura de la siguiente manera:</p>
-			<pre><code>https://api.openweathermap.org/data/2.5/weather?q=CIUDAD&units=metric&appid=APIKey', true</code></pre>
+			<pre><code>http://api.openweathermap.org/data/2.5/weather?q=CIUDAD&units=metric&appid=APIKey', true</code></pre>
 			<p>En el caso de que quiera preguntar por el tiempo en Punta Arenas, tengo que escribir lo siguiente:</p>
 			<pre><code>https://api.openweathermap.org/data/2.5/weather?q=Tokyo&units=metric&appid=1111111111</code></pre>
 			<p>¿Cuál es el origen del dato? Si lo georreferenciamos, es:</p>
@@ -35,8 +35,8 @@
 		<div class="col-sm-6 py-5">
 			<p>Un par de aclaraciones necesarias:</p>
 			<ul>
-			<li>El 1111111111 es el APIKey que te ofrece como ejemplo en <a href="https://openweathermap.org/appid">How to use API key in API call</a>. Para hacer la consulta yo estoy usando otra, y ustedes deben usar la suya propia.</li>
-			<li>En las instrucciones del uso de la API se recomienda que no uses nombre de ciudad, sino que te vayas a la segura con un código. Puedes encontrar <a href="http://bulk.openweathermap.org/sample/city.list.json.gz">un JSON de esos códigos por aquí</a> (por su peso está comprimido, como gz)</li>
+			<li>El 1111111111 es el APIKey que te ofrece como ejemplo en <a href="http://openweathermap.org/appid">How to use API key in API call</a>. Para hacer la consulta yo estoy usando otra, y ustedes deben usar la suya propia.</li>
+			<li>En las instrucciones del uso de la API se recomienda que no uses nombre de ciudad, sino que te vayas a la segura con un código. Puedes encontrar <a href="https://bulk.openweathermap.org/sample/city.list.json.gz">un JSON de esos códigos por aquí</a> (por su peso está comprimido, como gz)</li>
 			</ul>
 		</div> -->
         <div class="col-sm-12 py-5">
@@ -133,7 +133,7 @@ request.onload = function () {
 	var mymap = L.map('mapid').setView([lat, lon], 15);
 	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 		maxZoom: 20,
-		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' + 'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+		attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors, ' + 'Imagery © <a href="http://mapbox.com">Mapbox</a>',
 		id: 'mapbox.streets'
 	}).addTo(mymap);
 	L.marker([lat, lon], {icon: magallanes}).addTo(mymap)
@@ -143,4 +143,3 @@ request.send();
 </script>
 </body>
 </html>
-
